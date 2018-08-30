@@ -7,69 +7,200 @@
 
 {% block content %}
 
-<table class="govuk-table">
-        <h1 class="govuk-heading-xl">Estimated date of discharge</h1>
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Last updated</th>
-      <th class="govuk-table__header" scope="col">Estimated date of discharge</th>
-      <th class="govuk-table__header" scope="col">Seen</th>
-      <th class="govuk-table__header" scope="col">Approved</th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">See doctor</th>
-      <td class="govuk-table__cell ">Approve estimated leave day</td>
-      <td class="govuk-table__cell ">✅</td>
-      <td class="govuk-table__cell ">✅</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">See nurse</th>
-      <td class="govuk-table__cell "></td>
-            <td class="govuk-table__cell ">✅</td>
-      <td class="govuk-table__cell "></td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">...</th>
-      <td class="govuk-table__cell "></td>
-            <td class="govuk-table__cell "></td>
-      <td class="govuk-table__cell "></td>
-    </tr>
-  </tbody>
-</table>
 
 
-<table class="govuk-table">
-        <h2 class="govuk-heading-m">DAY 1 - Monday 31st August</h2>
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Action</th>
-      <th class="govuk-table__header" scope="col">Outcome</th>
-      <th class="govuk-table__header" scope="col">Seen?</th>
-      <th class="govuk-table__header" scope="col">Approved?</th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">See doctor</th>
-      <td class="govuk-table__cell ">Approve estimated leave day</td>
-      <td class="govuk-table__cell ">✅</td>
-      <td class="govuk-table__cell ">✅</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">See nurse</th>
-      <td class="govuk-table__cell "></td>
-            <td class="govuk-table__cell ">✅</td>
-      <td class="govuk-table__cell "></td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">...</th>
-      <td class="govuk-table__cell "></td>
-            <td class="govuk-table__cell "></td>
-      <td class="govuk-table__cell "></td>
-    </tr>
-  </tbody>
-</table>
+<div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        The estimated date you leave hospital is 5th September
+      </h1>
+
+              <div class="govuk-form-group govuk-form-group--error">
+              <span id="national-insurance-number-error" class="govuk-error-message">
+                The date you leave hospital may be changed on the day you arrive at hospital. It will be reviewed on a daily basis and adjusted based on the care you need. We will keep it updated on this site so you can check back any time.
+              </span>
+            </div>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number"> </span> People who need to approve this
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" aria-describedby="eligibility-completed">
+                Ward clerk
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="eligibility-completed">Approved</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" aria-describedby="read-declaration-completed">
+                Social worker
+              </a>
+
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number"> </span> Other people who can see this date
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" aria-describedby="company-information-completed">
+                Care home
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="company-information-completed">Seen</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name"  aria-describedby="contact-details-completed">
+                GP
+              </a>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name"  aria-describedby="contact-details-completed">
+                Jane Smith
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="contact-details-completed">Seen</strong>
+            </li>
+
+
+
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+
+
+  <h1 class="govuk-heading-l">Timeline for your stay in hospital</h1>
+
+        <p class="govuk-body"><a href="http://www.uhs.nhs.uk/Media/Controlleddocuments/Patientinformation/Muscles,jointsandbones/Totalkneereplacementenhancedrecoveryprogramme-patientinformation.pdf">Find out more about being in hospital for a knee replacement.</a></p>
+
+<h2 class="govuk-heading-m">Day before admission</h2>
+          <span id="email-hint" class="govuk-hint">
+              Sunday 2nd September </span>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Before coming to hospital
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+                <ul class="govuk-list govuk-list--bullet">
+          <li>bring all of you medication with you</li>
+          <li>stock up the freezer with precooked food or easy to cook meals for when you return</li>
+          <li>pack your mobile phone and charger</li>
+          <li>pack plenty of clothes and toiletries</li>
+          <li>arrange for someone to look after your pets while you are in hospital</li>
+        </ul>
+      </div>
+    </details>
+
+<h2 class="govuk-heading-m">Admission day</h2>
+          <span id="email-hint" class="govuk-hint">
+              Monday 3rd September</span>
+
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          People you will be seen by on your first day
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a nurse who will conduct an assessment and give you a care plan</li>
+          <li>a doctor who will assess your condition and start your treatment</li>
+          <li>a consultant who will check that everything is going as planned</li>
+        </ul>
+      </div>
+    </details>
+
+
+<h2 class="govuk-heading-m">Treatment days</h2>
+<span id="email-hint" class="govuk-hint">
+              Tuesday 4th September to Saturday 8th September</span>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          During treatment
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you will be continuously monitored by the nurse</li>
+          <li>your care plan will be followed</li>
+          <li>the doctor will assess your progress</li>
+          <li>you may also be seen by other specialists, such as physiotherapists, to ensure you're making good progress</li>
+        </ul>
+      </div>
+    </details>
+
+
+
+<h2 class="govuk-heading-m">Getting ready to leave</h2>
+<span id="email-hint" class="govuk-hint">Sunday 9th September
+              </span>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Getting ready to leave hospital
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>make sure your family or friends are aware you're leaving</li>
+          <li>arrange transport from hospital</li>
+          <li>ask someone to ensure you have basic supplies if you're going home</li>
+          <li>let the nurse know if you have any problems or queries</li>
+        </ul>
+      </div>
+    </details>
+
+
+<h2 class="govuk-heading-m">Leaving hospital</h2>
+<span id="email-hint" class="govuk-hint">Monday 10th September
+              </span>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Leaving hospital - hooray!
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>get a written discharge instructions and a summary of your current health status</li>
+          <li>check if you have any follow up appointments</li>
+          <li>make sure you understand what medication you need to take and when</li>
+          <li>if you're going home ask if you will get any care such as community nursing or GP visits</li>
+          <li>ask about things to watch for and what to do about them</li>
+          <li>write down the number of the person to call if you have any problems</li>
+          <li>buy nice chocolate for the nurses!</li>
+        </ul>
+      </div>
+    </details>
+
+
+        </main>
+      </div>
+
+
+
+
 
 {% endblock %}
