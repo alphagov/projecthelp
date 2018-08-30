@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+        <h1 class="govuk-heading-xl">Estimated date of discharge</h1>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Last updated</th>
+      <th class="govuk-table__header" scope="col">Estimated date of discharge</th>
+      <th class="govuk-table__header" scope="col">Seen</th>
+      <th class="govuk-table__header" scope="col">Approved</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">See doctor</th>
+      <td class="govuk-table__cell ">Approve estimated leave day</td>
+      <td class="govuk-table__cell ">✅</td>
+      <td class="govuk-table__cell ">✅</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">See nurse</th>
+      <td class="govuk-table__cell "></td>
+            <td class="govuk-table__cell ">✅</td>
+      <td class="govuk-table__cell "></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">...</th>
+      <td class="govuk-table__cell "></td>
+            <td class="govuk-table__cell "></td>
+      <td class="govuk-table__cell "></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="govuk-table">
+        <h2 class="govuk-heading-m">DAY 1 - Monday 31st August</h2>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Action</th>
+      <th class="govuk-table__header" scope="col">Outcome</th>
+      <th class="govuk-table__header" scope="col">Seen?</th>
+      <th class="govuk-table__header" scope="col">Approved?</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">See doctor</th>
+      <td class="govuk-table__cell ">Approve estimated leave day</td>
+      <td class="govuk-table__cell ">✅</td>
+      <td class="govuk-table__cell ">✅</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">See nurse</th>
+      <td class="govuk-table__cell "></td>
+            <td class="govuk-table__cell ">✅</td>
+      <td class="govuk-table__cell "></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">...</th>
+      <td class="govuk-table__cell "></td>
+            <td class="govuk-table__cell "></td>
+      <td class="govuk-table__cell "></td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
