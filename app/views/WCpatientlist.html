@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Patients in ward1</caption>
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Patient name</th>
+      <th class="govuk-table__header" scope="col">Date of birth</th>
+      <th class="govuk-table__header" scope="col">NHS number</th>
+      <th class="govuk-table__header" scope="col">Doctor name</th>
+      <th class="govuk-table__header" scope="col">Hospital bay and bed location</th>
+      <th class="govuk-table__header" scope="col">Date of admission</th>
+      <th class="govuk-table__header" scope="col">Expected date of discharge</th>
+
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"> <a href="http://localhost:3000/patient1" >John Smith </a> </th>
+      <td class="govuk-table__cell ">01/09/89</td>
+      <td class="govuk-table__cell ">074 982 9564</td>
+      <td class="govuk-table__cell ">Dr Morris</td>
+      <td class="govuk-table__cell ">Bay A bed 2</td>
+      <td class="govuk-table__cell ">13/08/2018</td>
+      <td class="govuk-table__cell ">30/08/2018</td>
+
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="http://localhost:3000/patient2" >Bob Carrott  </a> </th>
+      <td class="govuk-table__cell ">04/05/54</td>
+      <td class="govuk-table__cell ">647 934 8173</td>
+      <td class="govuk-table__cell ">Dr France</td>
+      <td class="govuk-table__cell ">Cubicle C1</td>
+      <td class="govuk-table__cell ">29/08/2018</td>
+      <td class="govuk-table__cell ">03/09/2018</td>
+
+
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"> <a href="http://localhost:3000/patient3" >Samantha Little </a> </th>
+      <td class="govuk-table__cell ">08/07/87</td>
+      <td class="govuk-table__cell ">064 923 8729</td>
+      <td class="govuk-table__cell ">Dr Devlin</td>
+      <td class="govuk-table__cell ">Bay B bed 4</td>
+      <td class="govuk-table__cell ">27/08/2018</td>
+      <td class="govuk-table__cell ">31/08/2018</td>
+
+
+    </tr>
+  </tbody>
+</table>
+
+<div class="govuk-width-container">
+  <a href="http://localhost:3000/WCstart" class="govuk-back-link">Log out</a>
+
+{% endblock %}

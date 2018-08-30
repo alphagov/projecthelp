@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="http://localhost:3000/WCstart" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Login</h1>
+
+                <form action="/form-handler" method="post">
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-label--m" for="username-number">
+                      Username:
+                    </label>
+                    <span id="username-hint" class="govuk-hint">
+                      For example, JSmith
+                    </span>
+                    <input class="govuk-input" id="username-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-label--m" for="password-number">
+                      Password:
+                    </label>
+                    <input class="govuk-input" id="password-number" name="password-number" type="text">
+                  </div>
+
+                  <a href="http://localhost:3000/WCpatientlist" role="button" class="govuk-button">
+                    Continue
+                  </a>
+
+{% endblock %}
