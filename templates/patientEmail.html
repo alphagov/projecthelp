@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="/patientDetails" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Where should we send your tracking link to?</h1>
+
+        <form action="/form-handler" method="post">
+
+           <div class="govuk-form-group">
+           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"> Email address
+              </legend>
+            <span id="email-hint" class="govuk-hint">
+              We’ll use this to send you a link so you can track your time in hospital.
+            <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+          </div>
+
+        <a href="/patientNOK" role="button" class="govuk-button">
+          Continue
+        </a>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
